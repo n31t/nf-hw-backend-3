@@ -18,7 +18,7 @@ app.get('/helloworld',(request,response) =>{
   response.send("Hello World!");
 })
 
-app.get('parser',(request,response) =>{
+app.get('/parser',(request,response) =>{
   saveDataToDB();
   setInterval(saveDataToDB, 30 * 60 * 1000);
   response.send("Parser");
